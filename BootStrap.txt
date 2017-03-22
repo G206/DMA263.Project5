@@ -1,0 +1,7 @@
+I've added all of the following Bootstrap components per your Project outline:
+
+1. Top Nav Bar
+2. Multiple text areas in column format through out web page
+3. Fixed Footer - Only has copyright message in it.
+4. Carousel
+5. 2 Well Components, 4 Input Groups, & 1 Button Group 

@@ -18,6 +18,7 @@ h1, h2, nav {
 body {
 	font-family: Xolonium;
 	margin: 0;
+	background-color: rgba(128,128,128,1);
 }
 nav .dropdown-menu {
 	font-family: Xolonium;
@@ -95,7 +96,7 @@ h1 {
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #000000;
-  background-color: #ffff00;
+  background-color: rgba(255,215,0,.8);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -188,7 +189,7 @@ h1 {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 0%;
-	background-color: #C0C0C0;
+	background-color: rgba(128,128,128,1);
 }
 
 /* ALL CSS below is broken down by their respective sections outside the NAV area */
@@ -197,7 +198,10 @@ section[id="about"]{
 	color: black;
 	font-size: 1.3em;
 }
-
+section[id="about"] .well {
+	background-color: rgba(255,255,255,.6);
+	color: black;
+}
 section[id="portfolio"]{
 	background-color: rgba(255,255,255,.6);
 	color: black;
@@ -354,7 +358,6 @@ form fieldset legend {
 form fieldset input {
 	height: 32px;
 	display: block;
-/*	margin: 0 5% 1%;*/
 	width: 95%;
 	background-color: rgba(255,255,255,.8);
 	color: black;
@@ -367,10 +370,50 @@ form fieldset textarea {
 	background-color: rgba(255,255,255,.8);
 	color: black;
 }
-
+/*CSS to modify default bootstrap styling*/
+.btn-primary {
+  color: black;
+  background-color: rgba(255,215,0,.8);
+  border-color: rgb(255,215,0);
+}
+.btn-primary:focus,
+.btn-primary.focus {
+	color: rgb(255,215,0);;
+	background-color: rgba(255,0,0,.8);
+	border-color: rgb(255,215,0);
+	font-weight: bold;
+}
+.btn-primary:hover {
+	color: rgb(255,215,0);;
+	background-color: rgba(255,0,0,.8);
+	border-color: rgb(255,215,0);
+	font-weight: bold;
+}
+.btn-danger {
+  color: white;
+  background-color: rgba(255,0,0,.8);
+  border-color: rgb(255,0,0);
+}
+.btn-danger:focus,
+.btn-danger.focus {
+	color: rgb(255,0,0);
+	background-color: rgba(255,215,0,.8);
+	border-color: rgb(255,0,0);
+	font-weight: bold;
+}
+.btn-danger:hover {
+	color: rgb(255,0,0);
+	background-color: rgba(255,215,0,.8);
+	border-color: rgb(255,0,0);
+	font-weight: bold;
+}
 section[id="followMe"]{
 	background-color: rgba(255,255,255,.6);
 	color: black;
+}
+section[id="followMe"] .well{
+	background-color: rgba(0,0,0,.6);
+	color: white;
 }
 
 section[id="followMe"] i{
